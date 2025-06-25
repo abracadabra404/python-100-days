@@ -30,3 +30,15 @@ print(type(c))
 print(type(d))
 
 # 变量的类型转换操纵
+
+print(float(a))
+print(int(b))
+print(int(f))
+print(int(f, base=16))  # str类型的123按照十六进制转换成int
+print(int(g, base=2)) # str类型的100按照二进制转成int
+print(float(e))
+print(bool(c))
+print(int(d))
+print(chr(a)) # int 类型的100转成str，输出'd'
+print(ord('d')) # str类型的’d‘ 转换成int，输出100
+
