@@ -41,3 +41,34 @@ for i in range(1, 10):
     for j in range(1,i + 1):
         print(f'{i}x{j}={i * j}', end='\t')
     print()
+
+# 判断一个数是不是素数
+num = 1239
+end = int(num ** 0.5)
+is_prime = True
+for i in range(2, end + 1):
+    if num % i == 0:
+        is_prime = False
+        break
+if is_prime:
+    print(f'{num}是素数')
+else:
+    print(f'{num}不是素数')
+
+# 求两个数的最大公约数
+x = 120
+y = 140
+for i in range(x,0,-1):
+    if x % i == 0 and y % i == 0:
+        print(f'最大公约数:{i}')
+        break
+
+# 欧几里得算法求最大公约数
+a = 120
+b = 140
+while b % a != 0:
+    a, b = b % a, a
+print(f'最大公约数:{i}')
+
+
+
