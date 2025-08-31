@@ -25,11 +25,11 @@ match-case 结构
 """
 status_code = int(input('response code:'))
 
-match status_code:
-    case 400 | 405 : description = 'Invalid Request'
-    case 401 | 403 : description = 'Not Allowed'
-    case 418: description = 'I am a teapot'
-    case 429: description = 'Too many requests'
-    case _: description = 'Unknown Status Code'
-print('status code description:',description)
+# match status_code:
+#     case 400 | 405 : description = 'Invalid Request'
+#     case 401 | 403 : description = 'Not Allowed'
+#     case 418: description = 'I am a teapot'
+#     case 429: description = 'Too many requests'
+#     case _: description = 'Unknown Status Code'
+# print('status code description:',description)
 
